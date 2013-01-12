@@ -36,17 +36,23 @@
     <link rel="image_src" href="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
     <link rel="shortcut icon" type="image/x-png" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jscrollpane.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    <!--[if lt IE 9]>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-    <![endif]-->
     <?php
       if ( is_singular() && get_option( 'thread_comments' ) )
         wp_enqueue_script( 'comment-reply' );
       wp_head();
     ?>
+
+    <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+    
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
   </head>
 
   <body <?php body_class(); ?>>
@@ -54,11 +60,7 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-  <div id="now" class="wrapper"><div class="inner">
+  <div class="wrapper"><div class="inner">
     <header id="branding" role="banner">
       <h1 id="site-title"><a href="<?php bloginfo( 'siteurl' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-      <div class="menus">
-        <nav class="social-media"><?php wp_nav_menu( array( 'theme_location' => 'social-media' ) ); ?></nav>
-        <nav class="main-menu"><?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?></nav>
-      </div>
     </header><!-- #branding -->

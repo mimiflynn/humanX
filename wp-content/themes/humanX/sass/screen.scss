@@ -1,0 +1,113 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+
+
+
+/*
+ *  Vars
+ * ------------------------------------------------------------------------- */
+
+$default-border-radius: 10px;
+
+/* box-shadow import */
+$default-box-shadow-color: rgba(0,0,0,0.2);
+$default-box-shadow-h-offset: 0px;
+$default-box-shadow-v-offset: 2px;
+$default-box-shadow-blur: 5px;
+$default-box-shadow-spread: false;
+$default-box-shadow-inset: false;
+
+$body-color: #FFFFFF;
+$footer-color: #1E2F59;
+
+$primary-color: #0E265E;
+
+$secondary-color: #0083C4;
+$secondary-color-alpha: rgba(68, 131, 191, 0.75);
+
+$lightest-grey: #F5F3F5;
+$light-grey: #E7E8E8;
+$dark-grey: #5A5D5D;
+
+$line-color: #E9EBEB;
+
+
+
+/*
+ *  Mixins
+ * ------------------------------------------------------------------------- */
+
+@mixin animate($property, $duration, $timing-function, $delay) {
+  transition: $property $duration $timing-function $delay;
+  -moz-transition: $property $duration $timing-function $delay;
+  -webkit-transition: $property $duration $timing-function $delay;
+  -o-transition: $property $duration $timing-function $delay;
+}
+
+@mixin animation($duration, $delay, $count) {
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-iteration-count: $count;
+  -moz-animation-duration: $duration;
+  -moz-animation-delay: $delay;
+  -moz-animation-iteration-count: $count;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-iteration-count: $count;
+  -ms-animation-duration: $duration;
+  -ms-animation-delay: $delay;
+  -ms-animation-iteration-count: $count;
+  -o-animation-duration: $duration;
+  -o-animation-delay: $delay;
+  -o-animation-iteration-count: $count;
+}
+
+
+/*
+ *  Styles
+ * ------------------------------------------------------------------------- */
+
+body {
+  font-size: 1em;
+  font-family: helvetica, arial, sans-serif;
+  background: $body-color;
+  color: $primary-color;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*
+ Homepage
+ * */
+
+.home {
+  .item {
+    margin: 0 auto 2em auto;
+    border: 1px solid #DDDDDD;
+    
+    @include border-radius;
+    @include box-shadow;
+    
+    a {
+      padding: 2em;
+      display: block;
+    }
+  }
+}

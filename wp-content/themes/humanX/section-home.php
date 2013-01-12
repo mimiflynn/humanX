@@ -10,7 +10,7 @@
                   <h2><a href="#">Deodorant</a></h2>
                 </div>
                 <div class="category">
-                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/Shampoo.jpg"></a>
+                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shampoo.jpg"></a>
                   <h2><a href="#">Shampoo</a></h2>
                 </div>
                 <div class="category">

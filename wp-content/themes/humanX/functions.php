@@ -34,7 +34,7 @@ function hx_style_method() {
   $mimiflynn_style = get_template_directory_uri() . '/css/screen.css';
   wp_enqueue_style('mimiflynn_style', $mimiflynn_style);
 }
-add_action('wp_enqueue_scripts','mimiflynn_style_method');
+//add_action('wp_enqueue_scripts','mimiflynn_style_method');
 
 
 
@@ -103,5 +103,22 @@ function hx_posted_on() {
 }
 
 
+
+/*
+ * Add Custom Post Type: Products 
+ * -------------------------------------------------------------------------- */
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'hx_product',
+		array(
+			'labels' => array(
+				'name' => __( 'Products' ),
+				'singular_name' => __( 'Product' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+}
 
 ?>

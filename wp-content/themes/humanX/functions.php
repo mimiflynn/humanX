@@ -104,6 +104,11 @@ function hx_posted_on() {
 
 
 
+
+
+
+
+
 /*
  * Add Custom Post Type: Products 
  * -------------------------------------------------------------------------- */
@@ -112,13 +117,46 @@ function create_post_type() {
 	register_post_type( 'hx_product',
 		array(
 			'labels' => array(
-				'name' => __( 'Products' ),
-				'singular_name' => __( 'Product' )
+				 'name' => 'Products',
+			     'singular_name' => 'Product',
+			     'add_new' => 'Add New',
+			     'add_new_item' => 'Add New Product',
+			     'edit_item' => 'Edit Product',
+			     'new_item' => 'New Product',
+			     'all_items' => 'All Product',
+			     'view_item' => 'View Product',
+			     'search_items' => 'Search Products',
+			     'not_found' =>  'No products found',
+			     'not_found_in_trash' => 'No products found in Trash', 
+			     'parent_item_colon' => '',
+			     'menu_name' => 'Products'
 			),
 		'public' => true,
 		'has_archive' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'product'),
+		 'supports' => array(
+            'title',
+            // 'editor',
+            'excerpt', 
+            'trackbacks',
+            'revisions',
+            'page-attributes'
+        ),
+        'taxonomies' => array('category', 'hx_product') 
 		)
 	);
+
 }
+// REGISTER CUSTOM TAXONOMY (Using Plugin Instead)
+// add_action('init', 'demo_add_default_boxes');
+// 	 function demo_add_default_boxes() {
+//      register_taxonomy_for_object_type('category', 'hx_product');
+//      register_taxonomy_for_object_type('post_tag', 'hx_product');
+//  }
+
+
+
+
 
 ?>

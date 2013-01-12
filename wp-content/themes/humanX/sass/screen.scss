@@ -94,10 +94,15 @@ h1, h2, h3, h4, p {
 
 h1 {
   font-size: 3em;
+  line-height: 1.25em;
 }
 
 h2 {
   font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 hr {
@@ -120,6 +125,40 @@ a {
   @include clear-all;
 }
 
+section {
+  padding-bottom: 3em;
+}
+
+.category {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 3em;
+    @include box-shadow;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    h2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 900px;
+      background: $secondary-color-alpha;
+      margin: 0;
+      padding: 0.5em 30px;
+      
+      a {
+        display: block;
+        color: $primary-color;
+      }
+    }
+  }
+
 /* Homepage */
 
 .home {
@@ -138,6 +177,12 @@ a {
       display: block;
     }
     
+    img {
+      float: right;
+      height: 150px;
+      margin-right: 30px;
+    }
+    
     &:hover {
       @include box-shadow;
       margin: -2px auto $bottom-margin-hover auto;
@@ -149,28 +194,18 @@ a {
 .product {
   display: none;
   
-  header {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-    margin-bottom: 3em;
-    
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    
-    h2 {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 900px;
-      background: rgba(50,50,50,0.75);
-      margin: 0;
-      padding: 1em 30px;
-      text-align: right;
-      color: $lightest-grey;
+  
+  .description {
+    padding-bottom: 3em;
+  }
+  .items {
+    .item {
+      padding: 25px 0;
+      
+      a, p {
+        padding: 0 30px;
+        margin: 5px 0;
+      }
     }
   }
 }

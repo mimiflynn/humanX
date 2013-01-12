@@ -25,6 +25,19 @@ function hx_scripts_method() {
 add_action('wp_enqueue_scripts','hx_scripts_method');
 
 
+/*
+ * Add CSS
+ * -------------------------------------------------------------------------- */
+function hx_style_method() {
+  $mimiflynn_animate_style = get_template_directory_uri() . '/css/animate.min.css';
+  wp_enqueue_style('mimiflynn_animate_style', $mimiflynn_animate_style);
+  $mimiflynn_style = get_template_directory_uri() . '/css/screen.css';
+  wp_enqueue_style('mimiflynn_style', $mimiflynn_style);
+}
+add_action('wp_enqueue_scripts','mimiflynn_style_method');
+
+
+
 
 /*
  * Widget Areas
@@ -50,7 +63,7 @@ if ( function_exists('register_sidebar') ) {
  * -------------------------------------------------------------------------- */
 
 /* Main Menu */
-function register_my_menus() {
+function hx_register_menus() {
 	register_nav_menus(
 		array(
       'main-menu' =>  'Main Menu',
@@ -58,7 +71,7 @@ function register_my_menus() {
 		)
 	);
 }
-add_action( 'init', 'register_my_menus' );
+add_action( 'init', 'hx_register_menus' );
 
 /*
  * Sidebars

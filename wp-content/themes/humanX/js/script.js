@@ -1,4 +1,4 @@
-/* Author: Mimi Flynn mimi at four32c dot com
+/* Author: Mimi Flynn mimi at mimiflynn dot com
  *
  **/
 

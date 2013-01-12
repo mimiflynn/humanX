@@ -156,10 +156,10 @@ section {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 900px;
+  width: 90%;
   background: rgba(68, 131, 191, 0.75);
   margin: 0;
-  padding: 0.5em 30px;
+  padding: 0.5em 5%;
 }
 /* line 155, ../sass/screen.scss */
 .category h2 a {

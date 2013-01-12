@@ -48,7 +48,7 @@
 
         var demoHide = function() {
 
-          $('.item').on('click', 'a', function(e) {
+          $('div.category').on('click', 'a', function(e) {
             
             e.preventDefault();
             $('section.product').show();

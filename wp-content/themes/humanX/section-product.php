@@ -1,17 +1,31 @@
           <section class="pane product">
           
             <article>
-              <header>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/test-img.png">
+              <header class="category">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/deodorant.jpg">
                 <h2>Deodorant</h2>
               </header>
               <div class="main-content">
                 <div class="description">
-                  <p>Jelly gummies danish gummies chocolate. Marshmallow faworki candy jelly beans cotton candy jujubes carrot cake. Jelly-o faworki gummies. Cheesecake pudding dessert marshmallow bear claw muffin jelly bonbon lemon drops.</p>
-                  <p>Carrot cake topping bear claw sugar plum. Jelly beans pastry jelly marshmallow fruitcake carrot cake toffee jelly-o. Chocolate bar macaroon bear claw. Fruitcake halvah marshmallow brownie.</p>
-                  <p>Donut lollipop jujubes tiramisu cake cake. Candy wypas marshmallow lemon drops icing dessert. Chocolate bonbon lollipop marshmallow gummies muffin powder. Cotton candy muffin dessert candy canes cupcake.</p>
-                  <p>Gingerbread jelly gummies danish cheesecake lemon drops muffin. Faworki muffin sugar plum. Icing marzipan icing cheesecake croissant pie.</p>
-                  <p>Danish bonbon tart jelly-o danish danish cheesecake sugar plum lemon drops. Jelly-o tiramisu sugar plum pudding. Sugar plum dessert sugar plum chocolate bar tootsie roll.</p>
+                  <p>Many deodorants contain Aluminum Zirconium, Triclosan, and Fragrance which are linked to Cancer, Organ System toxicity and  Endocrine Disruption.</p> 
+                </div>
+                <div class="items">
+                  <h3>The Human Experiment Picks</h3>
+                  <p>The following products do not use these or other toxic chemicals and are endorsed by The Human Experiment Team.</p>
+                  <div class="item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/toms.png"> 
+                    <a href="#">Tom's of Maine - Long Lasting Deodorant Stick</a>
+                    <p>Rating: 5 Stars</p>
+                    <p>Price: $5.99 (2.25 oz)</p>
+                    <p>Available at: Walgreens, Whole Foods, CVS and Target</p>
+                  </div>
+                  <div class="item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/toms.png"> 
+                    <a href="#">Tom's of Maine - Long Lasting Deodorant Stick</a>
+                    <p>Rating: 5 Stars</p>
+                    <p>Price: $5.99 (2.25 oz)</p>
+                    <p>Available at: Walgreens, Whole Foods, CVS and Target</p>
+                  </div>
                 </div>
               </div>
             </article>

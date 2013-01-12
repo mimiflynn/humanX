@@ -77,48 +77,156 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*
  *  Styles
  * ------------------------------------------------------------------------- */
-/* line 76, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 body {
   font-size: 1em;
+  line-height: 1.75em;
   font-family: helvetica, arial, sans-serif;
-  background: white;
+  background: #FFFFFF;
   color: #0e265e;
 }
 
-/* line 83, ../sass/screen.scss */
-h1, h2, h3, h4 {
+/* line 91, ../sass/screen.scss */
+h1, h2, h3, h4, p {
   margin-bottom: 1em;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 h1 {
   font-size: 3em;
 }
 
-/* line 91, ../sass/screen.scss */
-.wrapper {
-  width: 80%;
-  margin: 0 auto;
+/* line 99, ../sass/screen.scss */
+h2 {
+  font-size: 2em;
 }
 
-/*
- Homepage
- * */
-/* line 101, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
+hr {
+  clear: both;
+  margin-bottom: 2em;
+  border: none;
+  border-top: 1px solid #e9ebeb;
+}
+
+/* line 110, ../sass/screen.scss */
+a {
+  color: #0083c4;
+  text-decoration: none;
+}
+
+/* line 116, ../sass/screen.scss */
+.wrapper {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* Homepage */
+/* line 126, ../sass/screen.scss */
 .home .item {
-  margin: 0 auto 2em auto;
-  border: 1px solid #DDDDDD;
+  margin: 0 auto 30px auto;
+  border: 1px solid #e9ebeb;
+  background: #f5f3f5;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
-/* line 108, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .home .item a {
   padding: 2em;
   display: block;
+}
+/* line 141, ../sass/screen.scss */
+.home .item:hover {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: -2px auto 32px auto;
+}
+
+/* Product Page */
+/* line 149, ../sass/screen.scss */
+.product {
+  display: none;
+}
+/* line 152, ../sass/screen.scss */
+.product header {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+/* line 158, ../sass/screen.scss */
+.product header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 164, ../sass/screen.scss */
+.product header h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 900px;
+  background: rgba(50, 50, 50, 0.75);
+  margin: 0;
+  padding: 1em 30px;
+  text-align: right;
+  color: #f5f3f5;
+}
+
+/* Footer */
+/* line 179, ../sass/screen.scss */
+footer.footer-widgets {
+  background: #5a5d5d;
+  overflow: hidden;
+  color: #f5f3f5;
+  padding: 3em 0;
+  -webkit-box-shadow: inset 0 1px 5px 0 #222222;
+  -moz-box-shadow: inset 0 1px 5px 0 #222222;
+  box-shadow: inset 0 1px 5px 0 #222222;
+}
+/* line 187, ../sass/screen.scss */
+footer.footer-widgets a {
+  color: #0e265e;
+}
+
+/* Widgets */
+/* line 193, ../sass/screen.scss */
+.widgetContainer {
+  padding-bottom: 50px;
+  width: 33%;
+  float: left;
+}
+/* line 197, ../sass/screen.scss */
+.widgetContainer ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 201, ../sass/screen.scss */
+.widgetContainer li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 207, ../sass/screen.scss */
+.widgetContainer.hx-twitter ul {
+  padding-top: 1em;
+}
+/* line 210, ../sass/screen.scss */
+.widgetContainer.hx-twitter li {
+  margin-bottom: 1em;
+}
+/* line 212, ../sass/screen.scss */
+.widgetContainer.hx-twitter li .tweet_time {
+  display: block;
+  text-align: right;
+}
+/* line 215, ../sass/screen.scss */
+.widgetContainer.hx-twitter li .tweet_time a {
+  color: #e7e8e8;
 }

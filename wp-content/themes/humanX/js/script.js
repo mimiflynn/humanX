@@ -30,11 +30,8 @@
 
     HX.Sitewide = ( function() {
 
-        
-
         var init = function() {
 
-          
         };
 
         return {
@@ -49,12 +46,21 @@
 
     HX.Home = ( function() {
 
+        var demoHide = function() {
 
-        
+          $('.item').on('click', 'a', function(e) {
+            
+            e.preventDefault();
+            $('section.product').show();
+            $('section.home').hide();
+            
+          });
+
+        };
 
         var init = function() {
-
           
+          demoHide();
 
         };
 
@@ -74,24 +80,6 @@
 
       if ($('body').hasClass('home')) {
         HX.Home.init();
-      }
-
-      /*
-       * Set site to browser size
-       * ---------------------------------------------------------------------- */
-      if ($('html').hasClass('no-touch')) {
-
-        HX.Sitewide.setScreenSize();
-        $(window).resize(HX.Sitewide.setScreenSize);
-
-      }
-
-      if ($('body').hasClass('blog') || $('body').hasClass('single')) {
-
-        $('aside').stickyScroll({
-          container : '#single'
-        });
-
       }
 
     };

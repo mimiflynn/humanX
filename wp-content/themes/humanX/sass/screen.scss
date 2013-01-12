@@ -23,6 +23,9 @@ $default-box-shadow-blur: 5px;
 $default-box-shadow-spread: false;
 $default-box-shadow-inset: false;
 
+$margin-bottom: 2em;
+$content-margin-bottom: 0 0 1em 0;
+
 $body-color: #FFFFFF;
 $footer-color: #1E2F59;
 
@@ -42,6 +45,10 @@ $line-color: #E9EBEB;
 /*
  *  Mixins
  * ------------------------------------------------------------------------- */
+
+@mixin clear-all {
+  clear: both;
+}
 
 @mixin animate($property, $duration, $timing-function, $delay) {
   transition: $property $duration $timing-function $delay;
@@ -75,12 +82,13 @@ $line-color: #E9EBEB;
 
 body {
   font-size: 1em;
+  line-height: 1.75em;
   font-family: helvetica, arial, sans-serif;
-  background: $body-color;
+  background: #FFFFFF;
   color: $primary-color;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   margin-bottom: 1em;
 }
 
@@ -88,26 +96,126 @@ h1 {
   font-size: 3em;
 }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto;
+h2 {
+  font-size: 2em;
 }
 
-/*
- Homepage
- * */
+hr {
+  @include clear-all;
+  margin-bottom: $margin-bottom;
+  border: none;
+  border-top: 1px solid $line-color;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+
+.wrapper {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  @include clear-all;
+}
+
+/* Homepage */
 
 .home {
   .item {
-    margin: 0 auto 2em auto;
-    border: 1px solid #DDDDDD;
+    $bottom-margin: 30px;
+    $bottom-margin-hover: $bottom-margin + 2px;
+    
+    margin: 0 auto $bottom-margin auto;
+    border: 1px solid $line-color;
+    background: $lightest-grey;
     
     @include border-radius;
-    @include box-shadow;
     
     a {
       padding: 2em;
       display: block;
+    }
+    
+    &:hover {
+      @include box-shadow;
+      margin: -2px auto $bottom-margin-hover auto;
+    }
+  }
+}
+
+/* Product Page */
+.product {
+  display: none;
+  
+  header {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 3em;
+    
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    h2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 900px;
+      background: rgba(50,50,50,0.75);
+      margin: 0;
+      padding: 1em 30px;
+      text-align: right;
+      color: $lightest-grey;
+    }
+  }
+}
+
+/* Footer */
+footer.footer-widgets {
+  background: $dark-grey;
+  overflow: hidden;
+  color: $lightest-grey;
+  padding: 3em 0;
+  
+  @include single-box-shadow(#222222, 0, 1px, 5px, 0, true);
+  
+  a {
+    color: $primary-color;
+  }
+}
+
+/* Widgets */
+.widgetContainer {
+  padding-bottom: 50px;
+  width: 33%;
+  float: left;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &.hx-twitter {
+    ul {
+      padding-top: 1em;
+    }
+    li {
+      margin-bottom: 1em;
+      .tweet_time {
+        display: block;
+        text-align: right;
+        a {
+          color: $light-grey;
+        }
+      }
     }
   }
 }

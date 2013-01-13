@@ -14,7 +14,7 @@
                   foreach ($categories as $category) {
                     $cur_cat_id = "category_" . $category->cat_ID;
                     $acf_image = get_field('image', $cur_cat_id);
-                    $image = wp_get_attachment_image_src( $acf_image );
+                    $image = wp_get_attachment_image_src( $acf_image, 'full' );
                     ?>
                     <div class="product-category span6">
                       <a href="?cat=<?php echo $category->cat_ID ?>"><img src="<?php echo $image[0]; ?>"></a>

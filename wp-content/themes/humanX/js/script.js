@@ -79,8 +79,7 @@
           $('ol li').on('click', 'a.check', function(e) {
             
             e.preventDefault();
-            $('section.product').show();
-            $('section.home').hide();
+            $('').show();
             
           });
 

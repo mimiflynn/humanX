@@ -1,17 +1,12 @@
   </div></div>
+
+  
   <?php wp_footer(); ?>
   <footer class="footer-widgets">
-    <div class="wrapper">
-      <div class="widgetContainer">
-        <h3>Twitter widget</h3>
-      </div>
-      <div class="widgetContainer">
-        <h3>contact info</h3>
-      </div>
-      <div class="widgetContainer social-media">
-        <h3>Social Media</h3>
-        <?php wp_nav_menu( array( 'theme_location' => 'social-media' ) ); ?>
-      </div>
+    <div class="container">
+      <h3>Change the System!</h3>
+      After you buy safer for your family help change the system.  Support legislation that will ensure all products are safe. 
+      <br><br><a href="http://org2.democracyinaction.org/o/6639/p/dia/action3/common/public/?action_KEY=11290" class="btn">Click here &amp; enter your zipcode</a>
     </div>
   </footer>
 </body>

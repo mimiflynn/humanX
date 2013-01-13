@@ -32,7 +32,8 @@ $footer-color: #1E2F59;
 $primary-color: #0E265E;
 
 $secondary-color: #0083C4;
-$secondary-color-alpha: rgba(68, 131, 191, 0.75);
+$secondary-color-alpha: rgba(40, 40, 40, 0.25);
+
 
 $lightest-grey: #F5F3F5;
 $light-grey: #E7E8E8;
@@ -189,7 +190,9 @@ section {
       
       a {
         display: block;
-        color: $primary-color;
+        color: #fff;
+        text-shadow:1px 1px 1px rgba(0, 0, 0, 0.9),-1px -1px 3px rgba(0, 0, 0, 0.9);
+        text-decoration: none;
       }
     }
   }
@@ -198,14 +201,14 @@ section {
 
 .category {
   .hx_product {
-    $bottom-margin: 30px;
+    /*$bottom-margin: 30px;
     $bottom-margin-hover: $bottom-margin + 2px;
     
     margin: 0 auto $bottom-margin auto;
     border: 1px solid $line-color;
     background: $lightest-grey;
     
-    @include border-radius;
+    @include border-radius;*/
     
     a, div.field {
       
@@ -217,12 +220,66 @@ section {
       margin-right: 30px;
     }
     
-    &:hover {
+   /* &:hover {
       @include box-shadow;
       margin: -2px auto $bottom-margin-hover auto;
-    }
+    }*/
   }
 }
+
+
+/* Category Page */
+
+.category-hero {
+  margin: 40px 0;
+  background-color: #eeeeee;
+  padding: 20px 10px;
+
+  .icon {
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+  }
+
+  h1 {
+    font-size: 4em;
+    color: #333;
+    border-bottom:  1px solid #DDD;
+  }
+
+  p {
+    color: #666;
+  }
+
+}
+
+.category-deodorant .category-hero .icon {
+      background: $deodorant;
+}
+ 
+.category-household-cleaning .category-hero .icon{
+      background: $cleaners;
+    }
+    
+.category-laundry-detergent .category-hero .icon {
+      background: $washing-machine;
+}
+    
+.category-baby-bath-products .category-hero .icon{
+      background: $baby-bath;
+    }
+    
+.category-shaving-cream .category-hero .icon{
+      background: $shaving-cream;
+    }
+    
+.category-hand-soaps .category-hero  .icon{
+      background: $hand-soap;
+}
+
+
+   
+
 
 /* Product Page */
 .product {
@@ -243,6 +300,20 @@ section {
     }
   }
 }
+
+.hx_product {
+   
+  .entry-summary .field-image {
+    text-align: center;
+   }
+  .entry-summary img {
+    height: 200px;
+    padding: 20px;
+    
+  }
+
+}
+
 
 /* Quiz */
 .quiz {
@@ -268,9 +339,9 @@ section {
 
 /* Footer */
 footer.footer-widgets {
-  background: $dark-grey;
+  background: #eee;
   overflow: hidden;
-  color: $lightest-grey;
+  color: #333;
   padding: 3em 0;
   
   @include single-box-shadow(#222222, 0, 1px, 5px, 0, true);

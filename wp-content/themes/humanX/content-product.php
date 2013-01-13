@@ -11,6 +11,8 @@
 		</header><!-- .entry-header -->
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
-			<?php the_field(''); ?>
+			Price: $<?php the_field('price'); ?>
+			Rating: <?php the_field('rating'); ?>
+			<a href="<?php the_field('purchase_url'); ?>">Buy Online</a>
 		</div><!-- .entry-summary -->
   </article><!-- #post-<?php the_ID(); ?> -->

@@ -103,9 +103,16 @@
 
 
      <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        
+        <div class="row">
+
+            <div class="span6">
+              <iframe src="http://player.vimeo.com/video/31683038?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/31683038">The Human Experiment - Trailer</a> from <a href="http://vimeo.com/donhardy">Don Hardy</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+            </div>
+
+
+         </div> 
+
       </div>
 
 

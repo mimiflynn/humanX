@@ -1,11 +1,17 @@
+
+
+
+
           <section class="pane home" id="products">
-           <hr>
+           
             <article>
               <header>
-                <h2><span>3. Make The Switch</span></h2>
+                <h2><span>Make The Switch</span></h2>
                 <p class="description">Choose From Our List of Top Rated Products</p>
               </header>
               <div class="main-content">
+
+
 
               <div class="row">
                 <div class="span6">

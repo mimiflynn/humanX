@@ -10,7 +10,7 @@
                 <div class="row">
                 
                   <?php 
-                  $categories = get_categories(); 
+                  $categories = get_categories(array('hide_empty' => 0)); 
                   foreach ($categories as $category) {
                     $cur_cat_id = "category_" . $category->cat_ID;
                     $acf_image = get_field('image', $cur_cat_id);

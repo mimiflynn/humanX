@@ -71,12 +71,42 @@
         };
 
       }());
+      
+    HX.Quiz = ( function() {
+
+        var action = function() {
+
+          $('ol li').on('click', 'a.check', function(e) {
+            
+            e.preventDefault();
+            $('section.product').show();
+            $('section.home').hide();
+            
+          });
+
+        };
+
+        var init = function() {
+          
+          action();
+
+        };
+
+        return {
+
+          init : init
+
+        };
+
+      }());
 
     HX.namespace('HX.SiteInit');
 
     HX.SiteInit = function() {
 
       HX.Sitewide.init();
+
+      HX.Quiz.init();
 
       if ($('body').hasClass('home')) {
         HX.Home.init();

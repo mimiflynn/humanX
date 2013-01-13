@@ -8,47 +8,7 @@
                 <p class="description">Choose From Our List of Top Rated Products</p>
               </header>
               <div class="main-content">
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
-
-              <div class="row">
-                <div class="span6">
-                  <div class="product-category">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/deodorant.jpg"></a>
-                    <h2><a href="#">Deodorant</a></h2>
-                  </div>
-                  <div class="product-category">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shampoo.jpg"></a>
-                    <h2><a href="#">Shampoo</a></h2>
-                  </div>
-                  <div class="product-category">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/shaving-cream.jpg"></a>
-                    <h2><a href="#">Shaving Cream</a></h2>
-                  </div>
-                </div><!-- .span --> 
-              <div><!-- .row --> 
-
-
-              <div class="row">
-                <div class="span6">
-                  <div class="product-category">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/cleaner.jpg"></a>
-                    <h2><a href="#">Multipurpose Cleaner</a></h2>
-                  </div>
-                  <div class="product-category">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/detergent.jpg"></a>
-                    <h2><a href="#">Detergent</a></h2>
-                  </div>
-                </div><!-- .span --> 
-              <div><!-- .row --> 
-
-=======
-                
-=======
-
->>>>>>> 074e800ba3521f626d92dd429a79c4bcbd91e25b
                 <div class="row">
                 
                   <?php 
@@ -67,10 +27,6 @@
                   ?>
                  
                 <div><!-- .row --> 
-<<<<<<< HEAD
->>>>>>> 1b89c9539a323bcffb575b42099facf27c26fe0f
-=======
->>>>>>> 074e800ba3521f626d92dd429a79c4bcbd91e25b
 
               </div>
             </article>

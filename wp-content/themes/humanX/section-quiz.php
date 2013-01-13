@@ -14,7 +14,7 @@
                   <p>Many mattresses and 85% of couches contain flame retardants, which have been shown to cause decreased fertility, birth defects, learning disorders and hyperactivity. <a href="?cat=2" class="btn btn-info">Get tips to reduce your exposure.</a></p>
                 </div>
                 <div class="tab-pane" id="rB">
-                  <p> Most commercial shampoos, conditioners and body washes contain one or more chemicals that cause cancer, endocrine &amp; reproductive toxicity, including bath products for children. <a href="?cat=2" class="btn btn-info">Consider switching to safer products.</a></p>
+                  <p> Most commercial shampoos, conditioners and body washes contain one or more chemicals that cause cancer, endocrine &amp; reproductive toxicity, including bath products for children. <a href="?cat=3" class="btn btn-info">Consider switching to safer products.</a></p>
                 </div>
                 <div class="tab-pane" id="rC">
                   <p>Most canned foods are lined with a resin that contains the chemical BPA, a known endocrine disruptor. <a href="?cat=2" class="btn btn-info">Get tips to reduce your exposure.</a></p>

@@ -11,6 +11,9 @@
               </header>
               <div class="main-content">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a8c26611f4ea47ca8c69d62e15eec8734902e7f2
                 
                 <div class="row">
                 
@@ -30,9 +33,9 @@
                   ?>
                  
                 <div><!-- .row --> 
-=======
 
 
+<<<<<<< HEAD
 
               <div class="row">
                 <div class="span6">
@@ -67,6 +70,8 @@
 
 >>>>>>> b7332894982ce50979973f7377d0605cde2eabcc
 
+=======
+>>>>>>> a8c26611f4ea47ca8c69d62e15eec8734902e7f2
               </div>
             </article>
           </section>

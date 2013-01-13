@@ -1,5 +1,33 @@
 <?php
 
+function hx_get_projects( $query ) {
+
+  if ( $query->is_home() && $query->is_main_query() ) {
+    $query->set( 'post_type', array( 'hx_product' ) );
+  }
+  
+  return $query;
+  
+}
+add_filter( 'pre_get_posts', 'hx_get_projects' );
+
+
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if(is_category() || is_tag()) {
+    $post_type = get_query_var('post_type');
+  if($post_type)
+      $post_type = $post_type;
+  else
+      $post_type = array('post','hx_product'); // replace hx_product to your custom post type
+    $query->set('post_type',$post_type);
+  return $query;
+    }
+}
+
+
+
+
 /*
  * Supported Features
  * -------------------------------------------------------------------------- */
@@ -29,12 +57,12 @@ add_action('wp_enqueue_scripts','hx_scripts_method');
  * Add CSS
  * -------------------------------------------------------------------------- */
 function hx_style_method() {
-  $mimiflynn_animate_style = get_template_directory_uri() . '/css/animate.min.css';
-  wp_enqueue_style('mimiflynn_animate_style', $mimiflynn_animate_style);
-  $mimiflynn_style = get_template_directory_uri() . '/css/screen.css';
-  wp_enqueue_style('mimiflynn_style', $mimiflynn_style);
+  $hx_animate_style = get_template_directory_uri() . '/css/animate.min.css';
+  wp_enqueue_style('hx_animate_style', $hx_animate_style);
+  $hx_style = get_template_directory_uri() . '/css/screen.css';
+  wp_enqueue_style('hx_style', $hx_style);
 }
-//add_action('wp_enqueue_scripts','mimiflynn_style_method');
+//add_action('wp_enqueue_scripts','hx_style_method');
 
 
 

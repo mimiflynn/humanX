@@ -4,9 +4,7 @@
           <section class="pane" id="single">
             <div class="posts">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-              <?php get_template_part('content', 'product'); ?>
-  
+              <?php get_template_part( 'content', get_post_format() ); ?>
             <?php endwhile; else: ?>
             </div>
             <div class="warning">

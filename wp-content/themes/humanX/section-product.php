@@ -1,5 +1,4 @@
           <section class="pane product">
-          
             <article>
               <header class="category">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/deodorant.jpg">

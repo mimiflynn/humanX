@@ -173,9 +173,8 @@ section {
     
     @include border-radius;
     
-    a {
-      padding: 2em;
-      display: block;
+    a, div.field {
+      
     }
     
     img {

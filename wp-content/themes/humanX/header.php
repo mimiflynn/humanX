@@ -52,6 +52,10 @@
 
 <style>
 
+  .home-container {
+    padding: 1px 40px;
+  }
+
   .hero-unit-home {
     padding: 10px;
     margin-top: 20px;
@@ -87,6 +91,11 @@
 
   }
 
+  .footer-widgets  {
+        text-align: center;
+  }
+
+
   /* fluid video */
   .videoWrapper {
     position: relative;
@@ -106,29 +115,15 @@
   font-size: .75em;
 }
 
-    /* CLEAR */
-
-    /* Clear fix hack */
-    .clearfix:after {
-         content: ".";
-         display: block;
-         clear: both;
-         visibility: hidden;
-         line-height: 0;
-         height: 0;
+.right {
+  float: right;
+}
+/* lame attempt at responsive for the hero, fix later */
+@media all and (max-width: 500px) {
+    .hero-unit-home .quiz,  .hero-unit-home .span5 {
+      width: 100%;
     }
-
-    .clear {
-      clear: both;
-    }
-
-    .right {
-      float: right;
-    }
-
-    .left {
-      float: left;
-    }
+}
 
 
 </style>
@@ -152,7 +147,8 @@
   <body <?php body_class(); ?>>
      <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="  <?php if(!is_home()) { echo "container"; } else { echo "home-container"; } //temp fix to justify the logo on homepage?>">
+
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -165,6 +161,9 @@
            <!--  <ul class="nav">
               <li> <a href="#about">View All Products</a></li>
             </ul> -->
+            <div class="right">
+             <a href="http://ktffilms.us2.list-manage.com/subscribe?u=1c8de06a1993ad04e9cc4793c&id=af9e5e9ca5&codekitCB=379811086.098911" target="_blank" class="btn btn-danger">Sign Our Newsletter for Updates!</a>
+            </div>
             
           </div><!--/.nav-collapse -->
 
@@ -182,7 +181,7 @@
   <a href="http://localhost/humanX/wp-login.php?loginFacebook=1&redirect=http://localhost/humanX" onclick="window.location = 'http://localhost/humanX/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;">Click here to login or register with Facebook</a>
 
   <?php if (is_home()) { ?>
-     <div class="hero-unit-home clearfix">
+     <div class="hero-unit-home">
          <div class="row-fluid">
             <div class="span7">
               <div class="videoWrapper">
@@ -190,6 +189,7 @@
                    <iframe src="http://player.vimeo.com/video/31683038?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
               </div>
             </div>
+
 
             <div class="span5 quiz">
                 <h1>Are You Exposed?</h1>

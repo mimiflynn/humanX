@@ -93,37 +93,61 @@
     </div>
 
 
+<style>
 
+  .hero-unit-home {
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    color: inherit;
+  }
+
+  .hero-unit-home .quiz {
+   /* background: #000;*/
+  }
+
+  #products header .description {
+    text-align: center;
+    color: #666;
+  }
+
+  #products header h2 {
+    background: url("<?php echo get_template_directory_uri(); ?>/images/wing-header-bg.gif") repeat-x scroll 0 7px transparent;
+    margin: 0 20px 10px 0px;
+    text-align: center;
+  }
+  #products header h2 span {
+    background: #FFF;
+    padding: 30px;
+    margin-top: 2px;
+
+  }
+
+
+</style>
 
   <!-- Prompt IE 6 users to install Chrome Frame..
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<<<<<<< HEAD
-  <div class="wrapper"><div class="inner">
-=======
   <a href="http://localhost/humanX/wp-login.php?loginFacebook=1&redirect=http://localhost/humanX" onclick="window.location = 'http://localhost/humanX/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;">Click here to login or register with Facebook</a>
   <div class="container"><div class="inner">
-<<<<<<< HEAD
->>>>>>> c50a6d7582842dc0f4c4ff763e013e0aac5936ef
-    <header id="branding" role="banner">
-      <h1 id="site-title"><a href="<?php bloginfo( 'siteurl' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-    </header><!-- #branding -->
-=======
 
 
-     <div class="hero-unit">
-        
-        <div class="row">
-
-            <div class="span6">
-              <iframe src="http://player.vimeo.com/video/31683038?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/31683038">The Human Experiment - Trailer</a> from <a href="http://vimeo.com/donhardy">Don Hardy</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+     <div class="hero-unit-home">
+         <div class="row-fluid">
+            <div class="span7">
+              <h3>1. Watch The Trailer</h3>
+              <iframe src="http://player.vimeo.com/video/31683038?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
             </div>
 
+            <div class="span5 quiz">
+                <h3>2. Don't Think You're At Risk?</h3>
+            </div>
 
          </div> 
-
       </div>
 
 
    
->>>>>>> ddd63cb2a4071d9da031269be62a5d1ffbfdc554

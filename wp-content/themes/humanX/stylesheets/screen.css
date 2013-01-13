@@ -211,8 +211,30 @@ section {
   margin: 5px 0;
 }
 
+/* Quiz */
+/* line 215, ../sass/screen.scss */
+.quiz h3 {
+  margin-bottom: 0.5em;
+}
+/* line 218, ../sass/screen.scss */
+.quiz h3 .check {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid black;
+  color: red;
+  line-height: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+/* line 229, ../sass/screen.scss */
+.quiz .more-info {
+  display: none;
+  margin-bottom: 3em;
+}
+
 /* Footer */
-/* line 214, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 footer.footer-widgets {
   background: #5a5d5d;
   overflow: hidden;
@@ -222,43 +244,43 @@ footer.footer-widgets {
   -moz-box-shadow: inset 0 1px 5px 0 #222222;
   box-shadow: inset 0 1px 5px 0 #222222;
 }
-/* line 222, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 footer.footer-widgets a {
   color: #0e265e;
 }
 
 /* Widgets */
-/* line 228, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .widgetContainer {
   padding-bottom: 50px;
   width: 33%;
   float: left;
 }
-/* line 232, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .widgetContainer ul {
   margin: 0;
   padding: 0;
 }
-/* line 236, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .widgetContainer li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 242, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .widgetContainer.hx-twitter ul {
   padding-top: 1em;
 }
-/* line 245, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .widgetContainer.hx-twitter li {
   margin-bottom: 1em;
 }
-/* line 247, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .widgetContainer.hx-twitter li .tweet_time {
   display: block;
   text-align: right;
 }
-/* line 250, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .widgetContainer.hx-twitter li .tweet_time a {
   color: #e7e8e8;
 }

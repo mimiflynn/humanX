@@ -79,7 +79,12 @@
           $('ol li').on('click', 'a.check', function(e) {
             
             e.preventDefault();
-            $('').show();
+            if (!$(this).hasClass('selected')) {
+              $(this).addClass('selected').css('background', 'red');
+            } else {
+              $(this).removeClass('selected').css('background', 'none');
+            }
+            $(this).parent().next().toggle();
             
           });
 

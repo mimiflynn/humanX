@@ -11,5 +11,6 @@
 		</header><!-- .entry-header -->
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
+			<?php the_field(''); ?>
 		</div><!-- .entry-summary -->
   </article><!-- #post-<?php the_ID(); ?> -->

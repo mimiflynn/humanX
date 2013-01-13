@@ -95,6 +95,7 @@ h1, h2, h3, h4, p {
 h1 {
   font-size: 3em;
   line-height: 1.25em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -129,7 +130,7 @@ section {
   padding-bottom: 3em;
 }
 
-.category {
+.product-category {
     position: relative;
     height: 300px;
     overflow: hidden;
@@ -161,8 +162,8 @@ section {
 
 /* Homepage */
 
-.home {
-  .item {
+.category {
+  .hx_product {
     $bottom-margin: 30px;
     $bottom-margin-hover: $bottom-margin + 2px;
     

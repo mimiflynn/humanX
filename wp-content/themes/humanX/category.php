@@ -1,10 +1,10 @@
 <?php get_header(); ?>
       <div id="body" class="content">
         <div id="main">
-          <section class="pane" id="single">
+          <section class="pane" id="category">
             <div class="posts">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-              <?php get_template_part( 'content', get_post_format() ); ?>
+              <?php get_template_part( 'content', 'product' ); ?>
             <?php endwhile; else: ?>
             </div>
             <div class="warning">

@@ -46,7 +46,7 @@ $cream: rgba(230,238,206,1);
 $blue: rgba(72,160,153,1);
 $brown: rgba(78,47,42,1);
 
-$sunscreen: #D17B4F;
+$deodorant: #D17B4F;
 $washing-machine: #4497CA;
 $shaving-cream: #DFD564;
 $hand-soap: #57BAB3;
@@ -148,6 +148,26 @@ section {
     overflow: hidden;
     margin-bottom: 3em;
     @include box-shadow;
+    
+    &.deodorant {
+      background: $deodorant;
+    }
+    
+    &.household-cleaning {
+      background: $cleaners;
+    }
+    
+    &.laundry-detergent {
+      background: $washing-machine;
+    }
+    
+    &.shampoo {
+      background: $baby-bath;
+    }
+    
+    &.shaving-cream {
+      background: $shaving-cream;
+    }
     
     img {
       position: absolute;

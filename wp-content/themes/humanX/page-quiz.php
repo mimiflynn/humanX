@@ -1,7 +1,7 @@
 <?php 
-  /*
-    Template Name: Membership Landing Page
-  */
+/*
+  Template Name: quiz
+*/
   get_header(); ?>
       <div id="body" class="content">
         <div id="main">

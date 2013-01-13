@@ -181,6 +181,7 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <a href="http://localhost/humanX/wp-login.php?loginFacebook=1&redirect=http://localhost/humanX" onclick="window.location = 'http://localhost/humanX/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;">Click here to login or register with Facebook</a>
 
+  <?php if (is_home()) { ?>
      <div class="hero-unit-home clearfix">
          <div class="row-fluid">
             <div class="span7">
@@ -198,6 +199,7 @@
 
          </div> 
       </div>
+    <?php } //end if home ?>
 
 
   <div class="container"><div class="inner">

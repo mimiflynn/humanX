@@ -10,6 +10,9 @@
           
           <div class="field"><img src="<?php echo $image[0]; ?>"></div>
           
+            <iframe src="http://player.vimeo.com/video/57323126?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/57323126">Baby Shampoo Clip</a> from <a href="http://vimeo.com/donhardy">Don Hardy</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+
           <section class="pane" id="category">
             <div class="posts">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

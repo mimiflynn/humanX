@@ -23,7 +23,7 @@
 			<?
       $acf_url = get_field('purchase_url');
       if ($acf_url) { ?>
-			<div class="field"><a href="<?php the_field('purchase_url'); ?>">Buy Online</a></div>
+			<div class="field"><a href="<?php the_field('purchase_url'); ?>" target="_new">Buy Online</a></div>
 			  <?php
       }
       ?>

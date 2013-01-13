@@ -180,10 +180,6 @@ section {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 176, ../sass/screen.scss */
-.category .hx_product a, .category .hx_product div.field {
-  padding: 2em;
-}
 /* line 180, ../sass/screen.scss */
 .category .hx_product img {
   float: right;

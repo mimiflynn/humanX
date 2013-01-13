@@ -43,11 +43,92 @@
       wp_head();
     ?>
      <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/bootstrap/bootstrap-responsive.css" rel="stylesheet" type="text/css" /> -->
+  
    
     <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/animate-custom.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+
+<style>
+
+  .hero-unit-home {
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    color: inherit;
+     background-color: #eeeeee;
+     border-bottom: 1px solid #ddd;
+     margin-bottom: 50px;
+    }
+
+  .hero-unit-home .quiz {
+    padding: 20px;
+  }
+
+
+
+  #products header .description {
+    text-align: center;
+    color: #666;
+  }
+
+  #products header h2 {
+    background: url("<?php echo get_template_directory_uri(); ?>/images/wing-header-bg.gif") repeat-x scroll 0 7px transparent;
+    margin: 0 20px 10px 0px;
+    text-align: center;
+  }
+  #products header h2 span {
+    background: #FFF;
+    padding: 30px;
+    margin-top: 2px;
+
+  }
+
+  /* fluid video */
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.main-content h3 {
+  font-size: .75em;
+}
+
+    /* CLEAR */
+
+    /* Clear fix hack */
+    .clearfix:after {
+         content: ".";
+         display: block;
+         clear: both;
+         visibility: hidden;
+         line-height: 0;
+         height: 0;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+
+</style>
+
+
+       
+
+
   <!--[if IE]>
       <link href="<?php echo get_template_directory_uri(); ?>/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -55,6 +136,8 @@
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
+
+
     
   </head>
 
@@ -93,61 +176,34 @@
     </div>
 
 
-<style>
-
-  .hero-unit-home {
-    padding: 10px;
-    margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    color: inherit;
-  }
-
-  .hero-unit-home .quiz {
-   /* background: #000;*/
-  }
-
-  #products header .description {
-    text-align: center;
-    color: #666;
-  }
-
-  #products header h2 {
-    background: url("<?php echo get_template_directory_uri(); ?>/images/wing-header-bg.gif") repeat-x scroll 0 7px transparent;
-    margin: 0 20px 10px 0px;
-    text-align: center;
-  }
-  #products header h2 span {
-    background: #FFF;
-    padding: 30px;
-    margin-top: 2px;
-
-  }
 
 
-</style>
 
   <!-- Prompt IE 6 users to install Chrome Frame..
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <a href="http://localhost/humanX/wp-login.php?loginFacebook=1&redirect=http://localhost/humanX" onclick="window.location = 'http://localhost/humanX/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;">Click here to login or register with Facebook</a>
-  <div class="container"><div class="inner">
 
-
-     <div class="hero-unit-home">
+     <div class="hero-unit-home clearfix">
          <div class="row-fluid">
             <div class="span7">
-              <h3>1. Watch The Trailer</h3>
-              <iframe src="http://player.vimeo.com/video/31683038?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              <div class="videoWrapper">
+                <!-- Copy & Pasted from YouTube -->
+                   <iframe src="http://player.vimeo.com/video/31683038?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+              </div>
             </div>
 
             <div class="span5 quiz">
-                <h3>2. Don't Think You're At Risk?</h3>
+                <h1>Are You Exposed?</h1>
+                <?php get_template_part('section', 'quiz');?>
+            
             </div>
 
          </div> 
       </div>
+
+
+  <div class="container"><div class="inner">
 
 
    

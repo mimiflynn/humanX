@@ -103,7 +103,27 @@
 =======
   <a href="http://localhost/humanX/wp-login.php?loginFacebook=1&redirect=http://localhost/humanX" onclick="window.location = 'http://localhost/humanX/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;">Click here to login or register with Facebook</a>
   <div class="container"><div class="inner">
+<<<<<<< HEAD
 >>>>>>> c50a6d7582842dc0f4c4ff763e013e0aac5936ef
     <header id="branding" role="banner">
       <h1 id="site-title"><a href="<?php bloginfo( 'siteurl' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
     </header><!-- #branding -->
+=======
+
+
+     <div class="hero-unit">
+        
+        <div class="row">
+
+            <div class="span6">
+              <iframe src="http://player.vimeo.com/video/31683038?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/31683038">The Human Experiment - Trailer</a> from <a href="http://vimeo.com/donhardy">Don Hardy</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+            </div>
+
+
+         </div> 
+
+      </div>
+
+
+   
+>>>>>>> ddd63cb2a4071d9da031269be62a5d1ffbfdc554

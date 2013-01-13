@@ -54,7 +54,7 @@
 
   .hero-unit-home {
     padding: 10px;
-    margin-bottom: 30px;
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 200;
     line-height: 30px;

@@ -3,7 +3,7 @@
                <h3>In the last 24 hours did you...</h3>
               <ul class="nav nav-tabs">
                 <li class="active"><a href="#rA" data-toggle="tab">                    
-                  Sleep in a Bed?</a></li>
+                  Sleep in a bed?</a></li>
                 <li><a href="#rB" data-toggle="tab">Take a shower?</a></li>
                 <li><a href="#rC" data-toggle="tab">Drink a can of soda?</a></li>
                 <li><a href="#rD" data-toggle="tab">Drink from a water bottle?</a></li>

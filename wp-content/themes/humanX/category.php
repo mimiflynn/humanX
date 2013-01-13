@@ -5,7 +5,7 @@
           echo category_description();
           $cur_cat_id = "category_" . get_cat_id( single_cat_title("",false) );
           $acf_image = get_field('image', $cur_cat_id);
-          $image = wp_get_attachment_image_src( $acf_image );
+          $image = wp_get_attachment_image_src( $acf_image, 'full' );
           ?>
           
           <div class="field"><img src="<?php echo $image[0]; ?>"></div>

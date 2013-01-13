@@ -17,8 +17,11 @@
 			<?php the_excerpt(); ?>
 			<?
 			$acf_image = get_field('image');
+      
+      $image = wp_get_attachment_image_src( $acf_image, 'full' );
+      
       if ($acf_image) { ?>
-			<div class="field"><img src="<?php the_field('image'); ?>"></div>
+			<div class="field"><img src="<?php echo $image[0]; ?>"></div>
         <?php
       }
 			?>

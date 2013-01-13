@@ -10,6 +10,7 @@
                 <p class="description">Choose From Our List of Top Rated Products</p>
               </header>
               <div class="main-content">
+<<<<<<< HEAD
 
 
 
@@ -44,6 +45,27 @@
                 </div><!-- .span --> 
               <div><!-- .row --> 
 
+=======
+                
+                <div class="row">
+                
+                  <?php 
+                  $categories = get_categories(array('hide_empty' => 0)); 
+                  foreach ($categories as $category) {
+                    $cur_cat_id = "category_" . $category->cat_ID;
+                    $acf_image = get_field('image', $cur_cat_id);
+                    $image = wp_get_attachment_image_src( $acf_image, 'full' );
+                    ?>
+                    <div class="product-category span6 <?php echo $category->slug ?>">
+                      <a href="?cat=<?php echo $category->cat_ID ?>"><img src="<?php echo $image[0]; ?>"></a>
+                      <h2><a href="?cat=<?php echo $category->cat_ID ?>"><?php echo $category->name ?></a></h2>
+                    </div>
+                  <?php
+                  }
+                  ?>
+                 
+                <div><!-- .row --> 
+>>>>>>> 1b89c9539a323bcffb575b42099facf27c26fe0f
 
               </div>
             </article>
